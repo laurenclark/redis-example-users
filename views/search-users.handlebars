@@ -1,0 +1,11 @@
+<section id="search">
+    <h1>Search Users</h1>
+    {{#if error}} <span>{{error}}</span>{{/if}}
+    <form class="form-inline m-2 my-lg-0" method="POST" action="/user/search">
+        <div class="form-group">
+            <input type="text" name="id" class="form-control mr-sm-2"
+                placeholder="Search Users By ID">
+        </div>
+        <input type="submit" class="btn btn-primary my-2 my-sm-0" value="Search">
+    </form>
+</section>
